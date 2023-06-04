@@ -1,0 +1,89 @@
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    text-align: center;
+    padding: 5px;
+  }
+
+  /* Wspólne style dla wszystkich sekcji */
+  section {
+    border: 1px solid black;
+    padding: 40px;
+    box-sizing: border-box;
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  /* Style dla obszaru tytułu sekcji */
+  .section-title {
+    background-color: #f1c40f;
+    color: black;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 1px solid black
+  }
+
+  /* Styl dla widoku pulpitu (992px i więcej) */
+  @media (min-width: 992px) {
+    section {
+      width: calc(33.33% - 20px);
+      margin-right: 20px;
+      float: left;
+    }
+    section:last-child {
+      margin-right: 0;
+    }
+  }
+
+  /* Styl dla widoku tabletu (od 768 do 991 pikseli) */
+  @media (min-width: 768px) and (max-width: 991px) {
+    section {
+      width: 50%;
+      float: left;
+      margin-right: 20px;
+    }
+    .third-section {
+      clear: both;
+    }
+    section:last-child {
+      margin-right: 0;
+    }
+  }
+
+  /* Styl dla widoku mobilnego (równy lub mniejszy niż 767 pikseli) */
+  @media (max-width: 767px) {
+    section {
+      width: 100%;
+      float: none;
+      margin-right: 0;
+    }
+  }
+
+  /* Style dla poszczególnych sekcji */
+  #section1 {
+    background-color: #3498db;
+    color: white;
+  }
+
+  #section2 {
+    background-color: #2ecc71;
+    color: white;
+  }
+
+  #section3 {
+    background-color: #e74c3c;
+    color: white;
+  }
+
+  /* Styl dla fikcyjnego tekstu w sekcjach */
+  section p {
+    margin-top: 10px;
+  }
+</style>
